@@ -21,7 +21,7 @@
 #m1-menu-right {display: none;}
 #m1-menu-left {display: none;}
 #m1-search {display: none;}
-#dw__search {display: none;}
+#dw__search {display: block;}
 .breadcrumbs {display: none;}
  
  /* Structure
@@ -127,9 +127,13 @@ a:visited:active {
 
 /* Search Bar
 *********************************************/
-#dw__search .button {display: none;}
-#qsearch__in {margin: 0.5em 0 0.5em 1em; padding: 0; width: 18em !important;}
-#dw__search {margin: 0; padding: 0; width: 20em;} 
+#dw__search input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+#qsearch__in {margin: 0 !important;}
+#dw__search {margin: 0.5em 0; padding: 0;} 
 #m1-search {background-color: #008BB3; float: right; z-index: 200; position: absolute; right: 0; top: 40px;}
 #dw__search ul li a {color: #000;}
 #dokuwiki__header form.search {margin-top: 0;}

@@ -7,6 +7,11 @@
 if (!defined('DOKU_INC')) die();
 ?>
 
+<div class="m1-sidebox">
+<h3>Site Search</h3>
+<?php tpl_searchform() ?>
+</div>
+
 <!-- Uncomment this to include a wiki page in your sidebar
 <div class="m1-sidebox">
 <h3>Sidebar</h3>
