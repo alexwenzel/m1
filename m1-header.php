@@ -41,17 +41,12 @@ if (!defined('DOKU_INC')) die();
         <!--NON-MOBILE MENU-->
         <div id="m1-menu"> <!--Menu displayed for tablet and desktop viewing, hidden on phone size -->
       		<ul>
-     			<li><a href='#'>Portfolio</a></li>
-     			<li class='has-sub m1-desktop'><a href='#'>Products</a> <!--Hidden on tablet due to m1-desktop class -->
-       				 <ul>
-                 		<li><a href='#'>Sub 1</a></li>
-                 		<li><a href='#'>Sub 2</a></li>
-                 		<li><a href='#'>Sub 3</a></li>
-              		</ul>
-           		</li>
-     			<li><a href='#'>Contact</a></li>
-    		 	<li><a href='#'>About</a></li>
-    			<li><a href='#'>Help</a></li>
+                <?php _tpl_toolsevent('usertools', array(
+                    'admin'     => tpl_action('admin', 1, 'li', 1),
+                    'profile'   => tpl_action('profile', 1, 'li', 1),
+                    'register'  => tpl_action('register', 1, 'li', 1),
+                    'login'     => tpl_action('login', 1, 'li', 1),
+                )); ?>
   			</ul>
   	  	</div>
   	  	

@@ -110,12 +110,12 @@ a:visited:active {
 .m1-sidebox {margin: 0em auto 1em auto; padding: 0em 1em; clear: both;} 
 
 .m1-side-tools ul {list-style-type: none; padding: 0 !important; margin: 0;} 
-.m1-side-tools ul li {margin: 0; padding: 0;}
+.m1-side-tools ul li { margin: 0; }
+.m1-side-tools a {display: block; margin: 0.5em 0; background: #008BB3; color: #fff; text-align: center; font-weight: normal; letter-spacing: 0.5px; padding: 0.5em 1em;}
+.m1-side-tools a:hover {text-decoration: none; background: #0AF;}
 
 .m1-side-register ul {float: left; list-style-type: none; padding: 0 !important; margin: 0.5em 0 0 0;} 
 .m1-side-register ul li { display: inline-block; margin: 0 0.5em 1em 0; }
-.m1-side-register a {background: #008BB3; color: #fff; font-weight: normal; letter-spacing: 0.5px; padding: 0.5em 1em;}
-.m1-side-register a:hover {text-decoration: none; background: #0AF;}
 
 #dokuwiki__aside {border-left: 1px solid #ccc; float: left; padding: 0; margin: 90px 0 0 0;}
 
